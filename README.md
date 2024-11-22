@@ -78,6 +78,33 @@ The Yearly Issue Analyzer feature analyzes the frequency of issues created each 
 
 python run.py --feature 4
 
+## Explanation of Test case for test_fourth_analysis.py
+
+    test_valid_dataset:
+
+    Validates correct aggregation and graph generation for a typical dataset.
+
+    test_empty_dataset:
+
+    Ensures the program exits gracefully when there’s no data to analyze.
+
+    test_invalid_dates:
+
+    Confirms the program can handle missing or malformed created_date values.
+
+    test_single_year_dataset:
+
+    Validates behavior when all issues are from the same year.
+
+    test_large_dataset:
+
+    Simulates a large dataset to ensure the code is efficient and does not crash.
+
+
+## Running Unit Tests
+To run unit tests for the Fourth Analysis feature:
+
+    python -m pytest test_fourth_analysis.py -v
 
 ## VSCode run configuration
 
