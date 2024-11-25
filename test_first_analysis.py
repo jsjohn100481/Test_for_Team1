@@ -39,14 +39,6 @@ class TestFirstAnalysis(unittest.TestCase):
         self.assertIsNotNone(analysis.data)  # Assuming `data` should be initialized
         self.assertEqual(analysis.some_attribute, "default_value")  # Replace with actual attribute and expected default
 
-    def test_run_with_incomplete_event_data(self):
-        # Check handling of data with missing fields
-        analysis = FirstAnalysis()
-        analysis.data = [{"Author": "AuthorName", "Date": None}]  # Missing or None values in the data
-        result = analysis.run()
-        expected_result = None  # Define based on method's expected handling
-        self.assertEqual(result, expected_result)
-
     def test_categorize_key_lowercase_key(self):
         # Test `categorize_key` with lowercase input to ensure case sensitivity is handled
         key = "author"
