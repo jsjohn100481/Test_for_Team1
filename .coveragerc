@@ -1,8 +1,0 @@
-[run]
-omit = testing/*
-[report]
-include = 
-    first_analysis.py
-    second_analysis.py
-    third_analysis.py
-    
